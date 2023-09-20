@@ -6,11 +6,10 @@ then
 	    for j in $(seq 1 $2)
 	    do
 	    	ans=`expr $i \* $j`
-		$sum=$ans
+	    	echo "$1 * $2 = $ans"
 	    done
-	    echo $ans
 	done
 else
-	echo 'Input must be greater than 0's
+	echo 'Input must be greater than 0'
 fi
 exit 0
